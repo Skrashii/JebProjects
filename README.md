@@ -32,7 +32,6 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - Metricbeat records metrics from your OS and services and sends that data to the output for which you've configured Metricbeat.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name    | Function         | IP Address | Operating System |
 |---------|------------------|------------|------------------|
@@ -48,8 +47,8 @@ The machines on the internal network are not exposed to the public Internet.
 
 Only the Jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 - My personal IP address
-Machines within the network can only be accessed by _____.
-- My personal IP address
+
+Machines within the network can only be accessed by my personal IP address.
 
 A summary of the access policies in place can be found in the table below.
 
@@ -99,7 +98,6 @@ SSH into the control node and follow the steps below:
 - Update the hosts file to include the private IPs of your webservers.
 - Run the playbook, and navigate to http://<ELKpublicIP>:5601 to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
 - Which file is the playbook? Where do you copy it?
   - filebeat-playbook.yml is the playbook file, it is copied into /etc/anisble/roles
 - Which file do you update to make Ansible run the playbook on a specific machine?How do I specify which machine to install the ELK server on versus which to install Filebeat on?  
